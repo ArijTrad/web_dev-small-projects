@@ -1,0 +1,75 @@
+body{
+  background-color: rgb(31, 110, 53);
+}
+
+div{
+  margin: 0;
+  padding: 0;
+}
+
+.buttonbox{
+  height: 145px;
+  width: 369px;
+  background-color: #3A79AF;
+  margin: 30px;
+  border-radius: 200px;
+
+  position: fixed;
+
+}
+
+.sun{
+  height: 120px;
+  width: 120px;
+  margin-left: 17px;
+  margin-top: 12.5px;
+  background-color: #F3C426;
+  border-radius: 200px;
+
+  position: absolute;
+
+}
+
+.clouds{
+
+}
+
+.cloud1 , .cloud2 , .cloud3 , .cloud4 , .cloud5 , .cloud6 , .cloud7 {
+  height:100px ;
+  width: 100px ;
+  background-color: #F4F9FA;
+  border-radius: 200px;
+  position: absolute;
+
+
+}
+
+.cloud1{
+  top: 20px;
+  left: 330px;
+
+}
+.cloud2{
+  top: 63px;
+  left: 305px;
+}
+.cloud3{
+  top: 100px;
+  left: 240px;
+}
+.cloud4{
+  top: 113px;
+  left: 193px;
+}
+.cloud5{
+  top: 105px;
+  left: 137px;
+}
+.cloud6{
+  top: 113px;
+  left: 78px;
+}
+.cloud7{
+  top: 125px;
+  left: 11px;
+}
