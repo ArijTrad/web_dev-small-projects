@@ -11,23 +11,25 @@ div{
   height: 145px;
   width: 369px;
   background-color: #3A79AF;
-  margin: 30px;
   border-radius: 200px;
 
-  position: fixed;
+  left: 17px;
+  top: 12.5px;
+
+  position: relative;
 
 }
 
 .sun{
   height: 120px;
   width: 120px;
-  margin-left: 17px;
-  margin-top: 12.5px;
   background-color: #F3C426;
   border-radius: 200px;
 
-  position: absolute;
+  left: 17px;
+  top: 12.5px;
 
+  position: absolute;
 }
 
 .clouds{
@@ -39,9 +41,9 @@ div{
   width: 100px ;
   background-color: #F4F9FA;
   border-radius: 200px;
+
+
   position: absolute;
-
-
 }
 
 .cloud1{
