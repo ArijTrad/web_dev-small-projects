@@ -1,0 +1,81 @@
+p{
+  font-size: 14px;
+  margin: 0;
+  text-align:center
+}
+
+body{
+  background-color:hsl(0, 0%, 8%);
+}
+
+.main-box{
+  background-color: hsl(0, 0%, 12%);
+  border-radius: 20px;
+  position: absolute;
+  top: 10%;
+  bottom: 15%;
+  left: 20%;
+  right: 20%;
+  padding: 50px;
+
+
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  
+}
+
+.img-div{
+  border-radius: 20px;
+  width: 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.jessica-avatar-pic{
+  width: 100% ;
+  display: block;
+  border-radius: 50%;
+}
+
+.nname{
+color: hsl(0, 0%, 100%);
+}
+.location{
+color: hsl(75, 94%, 57%);
+}
+.job{
+  color: hsl(0, 0%, 100%);
+}
+
+.smb-butt{
+  background-color: hsl(0, 0%, 20%);
+  border: none;
+  border-radius: 5px;
+
+}
+.smb-butt:hover{
+  background-color: hsl(75, 94%, 57%);
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution{
+  border-style: solid;
+  position: fixed;
+  bottom: 1%;
+  left: 1%;
+  right: 1%;
+
+}
