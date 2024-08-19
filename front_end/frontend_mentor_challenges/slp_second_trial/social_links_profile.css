@@ -1,0 +1,113 @@
+body{
+  background-color: var(--grey900);
+  color: var(--white);
+  }
+p{
+all: unset;
+font-size: 0.875rem; /*p=>14px*/
+}
+@font-face {
+  font-family: "inter";
+  src: url(assets/fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+:root{
+--green: hsl(75, 94%, 57%);
+--white: hsl(0, 0%, 100%);
+--grey700: hsl(0, 0%, 20%);
+--grey800: hsl(0, 0%, 12%);
+--grey900: hsl(0, 0%, 8%);
+--inter: "inter";
+box-sizing: border-box;
+font-family: var(--inter);
+}
+
+
+.main-container{
+display: flex;
+justify-content:center ;
+align-items: center;
+/*height:90vh;*/
+margin: 20% 0 0 0;
+}
+
+.profile-card{
+background-color: var(--grey800);
+border-radius: 0.9em;
+width: 25em ;
+padding: 2em 0 2em 0;
+
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.profile-card img{
+  height: 5em ;
+  border-radius: 15em;
+}
+.profile-card h2{
+width: 100%;
+text-align: center;
+}
+.p1{
+  color: var(--green);
+  margin: 0 0 2em 0;
+  width: 100%;
+  text-align: center;
+}
+.p2{
+  margin: 0 0 2em 0;
+  width: 100%;
+  text-align: center;
+}
+
+.links-section{
+display: flex;
+flex-direction: column;
+align-items: center ;
+min-width: 100%;
+}
+.links-section a{
+all: unset;
+cursor: pointer;
+background-color: var(--grey700);
+border-radius: 0.4em;
+width: 70%;
+margin: 0.4em 0 0.4em 0;
+padding: 1em 0 1em 0;
+font-size: 1rem;
+text-align: center;
+}
+.links-section a:hover{
+  background-color: var(--green);
+  color: var(--grey900);
+}
+
+
+.footer{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.attribution{
+font-size: 0.688rem;
+text-align: center; 
+}
+.attribution a{
+font-size: 0.688rem;
+color: hsl(228, 45%, 44%);
+}
+
+
+
+
+
+/*======= Mobile: 375px >> 23.438 em*/
+@media (width <= 25.438em){
+  .main-container{
+  margin: 17% 0 0 0;
+  }
+  .profile-card{
+  width: 21em ;
+  }
+}
