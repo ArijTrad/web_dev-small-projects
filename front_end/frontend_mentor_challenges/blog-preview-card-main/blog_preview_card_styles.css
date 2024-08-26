@@ -34,18 +34,67 @@ main{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: start;
 
-  max-width: 30em;
-  min-height: 35em;
-  padding: 2em;
+  max-width: 23em;
+  padding: 1em ;
   box-sizing: border-box;
   background-color: white;
-  border-radius: 2em;
-  box-shadow: 0.7em 0.7em ;
+  border-radius: 1.2em;
+  box-shadow: 0.5em 0.5em ;
+}
+.artillus{
+  width: 100%;
+  border-radius: 0.8em;
 }
 
+.tag{
+  margin: 1.5em 0.5em 0.5em 0;
+  padding: 0.5em 1em 0.5em 1em;
+  border-radius: 0.2em;
+  background-color: var(--y);
+  font-family: var(--feb);
+  font-size: 1rem;
+}
 
+.datee{
+  margin: 0.5em 0.5em 0.5em 0;
+  color: var(--g2);
+  font-family: var(--fsb);
+  font-size: 1rem;
+}
+
+.cardlink{
+  all:unset;
+  margin: 1em 1em 1em 0;
+  color: black;
+  font-family: var(--feb);
+  font-size: 1.6rem;
+}
+.cardlink:hover{
+  color: var(--y);
+}
+
+.description{
+  margin: 1em 1em 1em 0;
+  color: var(--g1);
+  font-family: var(--fsb);
+  font-size: 0.9rem;
+}
+
+.usersection{
+margin: 0.5em 0.5em 0.5em 0;
+font-size: 1rem;
+display: flex;
+align-items: center;
+}
+.usersection img{
+  width: 20%;
+}
+.nametext{
+margin: 0 0 0 1em;
+font-family: var(--feb);
+}
 
 footer{
   position: absolute;
@@ -55,7 +104,9 @@ footer{
 
 }
 
-@media (min-width: 24em){
-
+@media (max-width: 24em){
+  main{
+    max-width: 20em;
+  }
 
 }
