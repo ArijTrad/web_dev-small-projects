@@ -1,0 +1,61 @@
+@font-face {
+  font-family: 'fighttree_extra_bold';
+  src: url('assets/fonts/static/Figtree-ExtraBold.ttf');
+}
+@font-face {
+  font-family: 'fighttree_semi_bold';
+  src: url('assets/fonts/static/Figtree-SemiBold.ttf');
+}
+
+:root{
+--feb:'fighttree_extra_bold';
+--fsb:'fighttree_semi_bold';
+--y:hsl(47, 88%, 63%);
+--g1:hsl(0, 0%, 42%);
+--g2:hsl(0, 0%, 7%);
+}
+
+body{
+  margin:0;
+  padding: 0;
+
+font-family: var(--fsb);
+background-color: var(--y);
+
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+min-height: 100vh;
+}
+
+main{
+  border: 3px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 30em;
+  min-height: 35em;
+  padding: 2em;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 2em;
+  box-shadow: 0.7em 0.7em ;
+}
+
+
+
+footer{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+}
+
+@media (min-width: 24em){
+
+
+}
