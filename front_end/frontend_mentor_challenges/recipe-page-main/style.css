@@ -1,0 +1,201 @@
+@font-face {
+  font-family: "YoungSerifRegular" ;
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "outfit";
+  src: url(assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+  font-weight: 400 700;
+}
+
+:root{
+--s1: hsl(30, 54%, 90%);
+--s2:hsl(30, 18%, 87%);
+--s3:hsl(30, 10%, 34%);
+--s4:hsl(24, 5%, 18%);
+--b:hsl(14, 45%, 36%);
+--r1:hsl(332, 51%, 32%);
+--r2:hsl(330, 100%, 98%);
+
+--fys:"YoungSerifRegular";
+--fo:"outfit";
+}
+body{
+  background-color: var(--s1);
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+article{
+  background-color: white;
+  max-width: 33em ;
+  margin: 6em 0 ;
+  padding: 1.6em 2em;
+  border-radius: 1.1em;
+}
+.imgfig{
+ width: 100% ;
+ margin: 0.5em 0 0 0;
+ border-radius: 0.5em;
+}
+h1{
+margin: 0.7em 0;
+font-family: var(--fys);
+font-weight: 400;
+font-size: 1.8rem;
+color: var(--s4);
+}
+p{
+font-family: var(--fo);
+font-size: 0.8rem;
+font-weight: 100;
+color: var(--s3);
+}
+.prep-time{
+font-family: var(--fo);
+background-color: var(--r2);
+padding: 0.5em 2em;
+margin: 2em 0;
+border-radius: 0.5em;
+}
+.prep-time h3{
+font-size: 1.1rem;
+font-weight: 600;
+color: var(--r1);
+}
+.prep-time ul{
+font-size: 0.8rem;
+font-weight: 400;
+color: var(--s3);
+padding: 0 0 0 1em;
+}
+.prep-time ul li{
+  margin: 0.7em 0;
+  padding-left: 1.5em;
+}
+
+
+.ingredients{
+  margin-bottom: 2em;
+}
+.ingredients h2{
+  font-family: var(--fys);
+  color: var(--b);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.ingredients ul{
+  font-family: var(--fo);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--s3);
+  padding: 0 0 0 1em;
+}
+.ingredients ul li{
+  margin: 0.7em 0;
+  padding-left: 1.5em;
+}
+
+.instructions{
+  margin-bottom: 2em;
+}
+.instructions h2{
+  font-family: var(--fys);
+  color: var(--b);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.instructions ol{
+  font-family: var(--fo);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--s3);
+  padding: 0 0 0 1em;
+}
+.instructions ol li{
+  margin: 0.7em 0;
+  padding-left: 1.5em;
+}
+.instructions ol > li::marker {
+  font-weight: bold;
+}
+
+.nutrition{
+  margin-bottom: 1em;
+  
+  font-family: var(--fo);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--s3);
+}
+.nutrition h2{
+  font-family: var(--fys);
+  color: var(--b);
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.nutrition p{
+  margin-bottom: 2em;
+}
+.cal, .carb , .prot , .fat{
+  display: flex;
+  margin: 0.7em 2em;
+}
+
+.cal *, .carb * , .prot *, .fat *{
+flex: 1;
+}
+
+.cal :last-child, .carb :last-child , .prot :last-child, .fat :last-child{
+  font-weight: bold;
+  color: var(--r1);
+}
+
+hr{
+  width: 100%;
+  color: var(--s2);
+  border: 0.1px solid;
+}
+
+
+
+
+/*1440px*/
+/*375px*/
+
+@media(max-width: 36em){
+  body{
+    background-color: white;
+  }
+  article{
+    margin: 0 0 3em 0;
+    border-radius: 0;
+  }
+
+}
+
+@media (max-width : 375px) {
+  body{
+    background-color: white;
+  }
+
+  article{
+    margin: 0 0 3em 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .mobile-content-styler{
+    padding: 1.6em 2em;
+  }
+
+  .imgfig{
+    width: 100% ;
+    margin:  0;
+    border-radius: 0;
+   }
+
+}
