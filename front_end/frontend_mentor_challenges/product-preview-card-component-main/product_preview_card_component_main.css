@@ -1,0 +1,182 @@
+
+
+:root{
+--dark_cyan:hsl(158, 36%, 37%);
+--cream:hsl(30, 38%, 92%);
+--dark_blue:hsl(212, 21%, 14%);
+--dark_gray_blue:hsl(228, 12%, 48%);
+
+--mont:"Montserrat" , sans-serif;
+--frau:"Fraunces" , Georgia;
+font-size: 0.875rem;
+
+  }
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cream);
+  font-family: var(--mont);
+}
+
+article{
+
+  margin: 1em;
+  box-sizing: border-box;
+  background-color: white;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.content-box{
+  margin: 1.5em;
+  display: grid;
+  gap: 1em;
+}
+
+.desktop-image{
+width: 0;
+height: 0;
+
+}
+.mobile-image{
+
+  width: 100%;
+}
+
+.tag{
+
+  color: var(--dark_gray_blue);
+  letter-spacing: 0.4rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+
+}
+
+h1{
+
+  color: var(--dark_blue);
+  font-family: var(--frau);
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+p{
+
+  color: var(--dark_gray_blue);
+  font-weight: 400;
+  
+}
+
+.price-section{
+display: flex;
+align-items: center;
+}
+
+.price-discount{
+  flex: 1;
+
+  color: var(--dark_cyan);
+  font-family: var(--frau);
+  font-size: 2em ;
+  font-weight: 800;
+  padding-right: 1em;
+}
+
+.price-before{
+  flex: 1;
+
+  color: var(--dark_gray_blue);
+  font-weight: 400;
+  text-decoration:line-through;
+}
+
+button{
+
+border: none;
+background-color: var(--dark_cyan);
+width: 100%;
+padding: 1em 0 1em 0;
+text-align: center;
+color: white;
+font-weight: 600;
+border-radius: 0.5em;
+}
+button:hover{
+  background-color: var(--dark_blue);
+}
+button img{
+  padding-right: 1em;
+}
+
+
+
+footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+
+
+@media (min-width: 375px) {
+body{
+  background-color: var(--cream);
+
+}
+
+article{
+  display: flex;
+
+  margin-top: 10%;
+  min-height: 37em;
+  max-width: 50em;
+  box-sizing: border-box;
+}
+
+.content-box{
+  flex: 1;
+  margin: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+ }
+ 
+.mobile-image{
+  width: 0;
+  height: 0;
+  }
+  .desktop-image{
+width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
+
+
+
+ .tag{
+  font-size: 1rem;
+ }
+ h1{
+  font-size: 2.5rem;
+ }
+ p {
+  font-size: 1.3rem;
+ }
+ .price-discount{
+font-size: 2.5rem;
+ }
+ .price-before{
+  font-size: 1.2rem;
+ }
+
+
+}
