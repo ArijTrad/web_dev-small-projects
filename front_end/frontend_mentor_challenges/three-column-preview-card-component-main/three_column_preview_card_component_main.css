@@ -1,0 +1,125 @@
+@font-face {
+  font-family: "big_shoulder_display" ;
+  src: url(fonts/BigShouldersDisplay-VariableFont_wght.ttf);
+}
+@font-face {
+  font-family: "lexend_deca" ;
+  src: url(fonts/LexendDeca-VariableFont_wght.ttf);
+}
+
+:root{
+--bright_orange:hsl(31, 77%, 52%) ;
+--dary_cyan:  hsl(184, 100%, 22%) ;
+--very_dark_cyan: hsl(179, 100%, 13%) ;
+--transparent_white: hsla(0, 0%, 100%, 0.75) ;
+--very_light_gray: hsl(0, 0%, 95%);
+--font_big_shoulder: "big_shoulder_display" ;
+--font_lexend: "lexend_deca";
+--small_font_size: 0.9rem ;
+--medium_font_size: 1rem;
+--big_font_size: 2.2rem ;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+  padding: 0;
+}
+
+article{
+/*
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  */
+  width: 90%;
+  margin: 2em auto;
+  border-radius: 0.5em;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 2em;
+  box-sizing: border-box;
+
+}
+
+.sedan{
+  background-color: var(--bright_orange);
+  color: var(--very_light_gray);
+}
+.suv{
+  background-color: var(--dary_cyan);
+  color: var(--transparent_white);
+}
+.luxury{
+  background-color: var(--very_dark_cyan);
+  color: var(--transparent_white);
+}
+
+.sedan img , .suv img , .luxury img{
+  height: 2.5em;
+}
+.sedan h1 , .suv h1 , .luxury h1{
+font-family: var(--font_big_shoulder);
+color: var(--transparent_white);
+font-size: var(--big_font_size);
+}
+.sedan p, .suv p , .luxury p{
+  font-family: var(--font_lexend);
+  font-size: var(--small_font_size);
+  font-weight: 300;
+  line-height: 1.7em;
+}
+.sedan button{
+  color: var(--bright_orange);
+}
+.suv button{
+  color: var(--dary_cyan);
+}
+.luxury button{
+  color: var(--very_dark_cyan);
+}
+button{
+  font-family: var(--font_lexend);
+  font-size: var(--medium_font_size);
+  border-radius:4em ;
+  padding: 0.6em 1.6em;
+  border:none;
+  border: solid 0.25em var(--very_light_gray);
+  background-color: var(--very_light_gray);
+  margin-top: 1.5em;
+}
+
+
+
+footer{
+position:relative;
+bottom: 0;
+text-align: center;
+}
+
+@media (min-width:375px) {
+
+
+  body{
+  }
+
+  article{
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+      max-width: 37em;
+      margin: 10% auto;
+    }
+
+}
