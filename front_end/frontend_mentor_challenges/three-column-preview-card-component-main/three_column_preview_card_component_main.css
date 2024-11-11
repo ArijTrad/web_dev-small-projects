@@ -48,6 +48,7 @@ section{
   align-items: start;
   padding: 2em;
   box-sizing: border-box;
+  height: 100%;
 
 }
 
@@ -120,5 +121,11 @@ text-align: center;
       max-width: 37em;
       margin: 10% auto;
     }
+
+
+  section{
+    min-height: 60vh ;
+
+  }
 
 }
