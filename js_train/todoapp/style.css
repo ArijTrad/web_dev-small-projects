@@ -6,4 +6,11 @@
 
 body {
     background-color: gray;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url(./images/background.jpg) no-repeat center center/cover;
+
 }
