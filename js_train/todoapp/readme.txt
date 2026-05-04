@@ -16,3 +16,40 @@ wanna use classList  for sth like this so it's like you make css for many classe
 wanna make the list put the checked item down to the end of teh list
 
 
+
+
+
+
+
+****************************************************************************************************************************************************************************************************************************************************************************************
+
+adding move to bottom functionality
+
+    const moveItemToBottom = (event) => {
+        const checkbox = event.target;
+        const li = checkbox.closest('li');
+        const $taskList = document.getElementById('task-list');
+        
+        if (checkbox.checked) {
+            $taskList.appendChild(li);
+        }
+    }
+
+
+        // ✅ EVENT LISTENER ATTACHED HERE
+        const checkbox = li.querySelector('.checkbox');
+        checkbox.addEventListener('change', moveItemToBottom);
+
+
+//*************************************** */
+
+
+
+
+
+
+
+
+
+
+
